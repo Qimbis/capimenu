@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="28" fill="#f0f5e6"/>
+  <!-- orejitas -->
+  <ellipse cx="38" cy="42" rx="9" ry="8" fill="#8a5a2b"/>
+  <ellipse cx="90" cy="42" rx="9" ry="8" fill="#8a5a2b"/>
+  <ellipse cx="38" cy="43" rx="4.5" ry="4" fill="#6e4520"/>
+  <ellipse cx="90" cy="43" rx="4.5" ry="4" fill="#6e4520"/>
+  <!-- cabeza (ancha y serena, muy capi) -->
+  <rect x="24" y="38" width="80" height="66" rx="30" fill="#a9793f"/>
+  <!-- hocico -->
+  <rect x="40" y="74" width="48" height="30" rx="15" fill="#c49a63"/>
+  <!-- gorro de chef -->
+  <g transform="translate(0,-2)">
+    <ellipse cx="50" cy="26" rx="12" ry="10" fill="#fff"/>
+    <ellipse cx="64" cy="22" rx="13" ry="11" fill="#fff"/>
+    <ellipse cx="78" cy="26" rx="12" ry="10" fill="#fff"/>
+    <rect x="44" y="26" width="40" height="12" rx="4" fill="#fff"/>
+  </g>
+  <!-- ojos zen -->
+  <circle cx="46" cy="66" r="4" fill="#33301f"/>
+  <circle cx="82" cy="66" r="4" fill="#33301f"/>
+  <!-- nariz -->
+  <ellipse cx="64" cy="84" rx="7" ry="5" fill="#6e4520"/>
+  <!-- boca tranquila -->
+  <path d="M58 94 Q64 98 70 94" fill="none" stroke="#6e4520" stroke-width="3" stroke-linecap="round"/>
+  <!-- naranjita en la cabeza (spa de capis) -->
+  <circle cx="94" cy="34" r="8" fill="#e8912c"/>
+  <path d="M94 27 Q96 23 100 24" fill="none" stroke="#5c8a4a" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

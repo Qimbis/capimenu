@@ -1,0 +1,13 @@
+{
+  "name": "CapiMenú",
+  "short_name": "CapiMenú",
+  "description": "Menú semanal, recetas y compras — con calma de capibara.",
+  "lang": "es-CL",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f7ee",
+  "theme_color": "#6f9440",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
