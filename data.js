@@ -60,6 +60,24 @@ const CAPI_DATA = {
       nutri: { e: "~340 kcal · 17 g proteína" },
     },
 
+    "desayuno-libre": {
+      t: "Desayuno libre — elige tú", emoji: "☕", time: "0–10 min",
+      ing: [
+        { n: "Apurada o sin hambre: un vaso de leche descremada y listo (está bien, en serio)", e: "1 vaso", h: "1 vaso" },
+        { n: "Yogur natural con avena y fruta", e: "1 pote", h: "1 pote" },
+        { n: "Pan o marraqueta con quesillo y tomate", e: "1–2 reb.", h: "1–2 reb." },
+        { n: "Huevo revuelto con tomate (si el turno te da tiempo)", e: "2 huevos", h: "1–2 huevos" },
+        { n: "Avena caliente con plátano y canela", e: "1 taza", h: "1 taza" },
+      ],
+      steps: [
+        "El desayuno es TUYO y libre: come lo que se te antoje de la lista según cómo amanezcas y tu turno.",
+        "Entrada temprano: lo primero a la mano, sin cocinar — un vaso de leche o un yogur y a trabajar.",
+        "Con más tiempo: el huevo o la avena, que aguantan más hasta el almuerzo.",
+        "Para el hijo sí conviene que no se salte algo (a los 10 el desayuno importa); cualquier opción de la lista le sirve.",
+      ],
+      nutri: { e: "de ~120 kcal (solo leche) a ~360 (huevo con pan) — cualquiera está bien, no lo pienses" },
+    },
+
     /* ---------- almuerzos ---------- */
     "tallarines-bolonesa": {
       t: "Tallarines con boloñesa liviana", emoji: "🍝", time: "25 min",
@@ -142,6 +160,46 @@ const CAPI_DATA = {
       ],
       steps: ["Masa: mezclar, amasar 5 min, reposar 30 (mientras, la salsa).", "Estirar, salsa, ingredientes por lados, queso medido con pesa.", "Horno a full 10–12 min.", "Ya está contada en la semana: cero culpa, es plan. 🦫🍊"],
       nutri: { e: "~650 kcal · 30 g proteína" },
+    },
+
+    /* ---------- ollas grandes (batch: cocinas 1 vez, comes 3 días) ---------- */
+    "olla-pollo": {
+      t: "Olla grande de pollo con papas y verduras", emoji: "🍲", time: "40 min (una sola vez)",
+      ing: [
+        { n: "Trutro de pollo deshuesado sin piel, en presas", e: "600 g (toda la olla)", h: "600 g (toda la olla)" },
+        { n: "Papas en cubos", e: "6 medianas", h: "6 medianas" },
+        { n: "Zapallo en cubos", e: "1 trozo grande", h: "1 trozo grande" },
+        { n: "Zanahoria, choclo y arvejas", e: "2 tazas", h: "2 tazas" },
+        { n: "Cebolla, ajo y pimentón (sofrito)", e: "1 cda de aceite para toda la olla", h: "1 cda de aceite para toda la olla" },
+        { n: "Arroz o fideo cabello de ángel (opcional, al servir)", e: "1 puñado por plato", h: "1 puñado por plato" },
+      ],
+      steps: [
+        "🔁 Esta olla rinde 3 almuerzos (lunes · martes · miércoles). Cantidades para toda la olla, no por plato.",
+        "Sofrito suave en la olla grande: cebolla, ajo y pimentón con 1 cda de aceite (una sola, para toda la olla).",
+        "Dorar el pollo, sumar zanahoria y agua caliente que cubra. 15 min.",
+        "Papas y zapallo, 15 min más hasta que estén blandas. Choclo y arvejas al final.",
+        "Reparte en 3 tandas (2 platos cada una): una para hoy, dos a la nevera en cajas tapadas.",
+        "Cada día recalientas una tanda en una ollita con un chorrito de agua — nada de microondas. Sabe mejor al 2º día. 🦫",
+      ],
+      nutri: { e: "~520 kcal · 34 g proteína por plato" },
+    },
+    "olla-lentejas": {
+      t: "Olla grande de lentejas con verduras", emoji: "🥘", time: "35 min (una sola vez)",
+      ing: [
+        { n: "Lentejas", e: "500 g (toda la olla)", h: "500 g (toda la olla)" },
+        { n: "Zanahoria y zapallo en cubos", e: "3 tazas", h: "3 tazas" },
+        { n: "Cebolla, ajo y pimentón (sofrito)", e: "1 cda de aceite para toda la olla", h: "1 cda de aceite para toda la olla" },
+        { n: "Arroz para acompañar (al servir)", e: "1 puñado por plato", h: "1 puñado por plato" },
+        { n: "Huevo duro (opcional, para el hijo)", e: "—", h: "1 encima" },
+      ],
+      steps: [
+        "🔁 Esta olla rinde 3 almuerzos (jueves · viernes · sábado). Cocínala el miércoles en la tarde o el jueves.",
+        "Sofrito suave, sumar las lentejas y las verduras, agua o caldo que cubra.",
+        "Olla a presión 12–15 min, o normal ~35. Deben quedar cremosas, no secas.",
+        "Reparte en 3 tandas a la nevera. Cada día recalientas una en ollita con un chorrito de agua + arroz fresco.",
+        "Si al hijo no le convencen, un huevo duro picado encima las salva. 🦫",
+      ],
+      nutri: { e: "~540 kcal · 26 g proteína por plato" },
     },
 
     /* ---------- onces ---------- */
@@ -275,6 +333,86 @@ const CAPI_DATA = {
           items: [
             { n: "Marraquetas", q: "al día, ~1 por persona" },
             { n: "Pan de hamburguesa", q: "2 unidades (viernes)" },
+          ],
+        },
+      ],
+    },
+    {
+      id: "s2",
+      label: "Semana 2 — a tu ritmo",
+      dates: "27 jul – 2 ago",
+      snack: "Fruta de estación entre comidas (manzana, pera, kiwi, mandarina). Para él, libre — la fruta nunca se raciona.",
+      rules: [
+        "El gran cambio: cocinas 2 veces en la semana, no 7. Cada olla rinde 3 almuerzos.",
+        "El desayuno es libre: elige de la lista según tu turno. Si es solo un vaso de leche y salir, está bien.",
+        "La once también es libre: elige la que quieras, o aprovecha lo que sobró del almuerzo.",
+        "Se recalienta en olla con un chorrito de agua (sin microondas). Sabe mejor al 2º día.",
+        "¿Prefieres cocinar UNA sola vez para toda la semana? Haz la olla de pollo más grande y rinde los 6 días — tú mandas.",
+        "Nada frito (la vesícula manda), grasas en cucharaditas, y la pizza del domingo es plan, no pecado. 🦫",
+      ],
+      prep: {
+        title: "Cocinas 2 veces, no 7",
+        items: [
+          "DOMINGO: la olla grande de pollo (rinde lun-mar-mié) + la masa y salsa de la pizza + 4 huevos duros para las onces.",
+          "MIÉRCOLES en la tarde (o el jueves): la olla grande de lentejas (rinde jue-vie-sáb).",
+          "Reparte cada olla en 3 cajas tapadas apenas se entibie y a la nevera. Cada día solo recalientas.",
+          "Ten lechuga lavada, tomate y fruta a mano para las onces y las colaciones.",
+          "El resto de la semana NO cocinas almuerzo: solo recalientas. Ese es todo el chiste. 🦫",
+        ],
+      },
+      days: [
+        { name: "Lunes",     desayuno: "desayuno-libre", almuerzo: "olla-pollo",    once: "once-quesillo" },
+        { name: "Martes",    desayuno: "desayuno-libre", almuerzo: "olla-pollo",    once: "once-pavo" },
+        { name: "Miércoles", desayuno: "desayuno-libre", almuerzo: "olla-pollo",    once: "once-atun" },
+        { name: "Jueves",    desayuno: "desayuno-libre", almuerzo: "olla-lentejas", once: "once-huevo" },
+        { name: "Viernes",   desayuno: "desayuno-libre", almuerzo: "olla-lentejas", once: "once-pavo" },
+        { name: "Sábado",    desayuno: "desayuno-libre", almuerzo: "olla-lentejas", once: "once-quesillo" },
+        { name: "Domingo",   desayuno: "desayuno-libre", almuerzo: "pizza-casera",  once: "once-atun" },
+      ],
+      shopping: [
+        {
+          cat: "Feria 🍅", links: false,
+          items: [
+            { n: "Papas", q: "2 kg" },
+            { n: "Zapallo", q: "1 trozo grande" },
+            { n: "Zanahorias", q: "1 kg" },
+            { n: "Cebollas", q: "1 kg" },
+            { n: "Pimentón", q: "2 unidades" },
+            { n: "Tomates", q: "1 kg" },
+            { n: "Lechuga", q: "1 unidad" },
+            { n: "Paltas", q: "2 unidades" },
+            { n: "Plátanos", q: "6 unidades" },
+            { n: "Manzanas y peras", q: "1 kg" },
+            { n: "Kiwis y mandarinas", q: "½ kg" },
+            { n: "Limones", q: "½ kg" },
+          ],
+        },
+        {
+          cat: "Súper 🛒", links: true,
+          items: [
+            { n: "Trutro de pollo deshuesado", q: "600 g" },
+            { n: "Lentejas", q: "500 g" },
+            { n: "Choclo y arvejas congelados", q: "1 bolsa c/u" },
+            { n: "Arroz", q: "1 kg" },
+            { n: "Avena", q: "500 g" },
+            { n: "Yogur natural", q: "1 kg" },
+            { n: "Leche descremada", q: "4 L" },
+            { n: "Huevos", q: "12 unidades" },
+            { n: "Quesillo", q: "2 unidades" },
+            { n: "Queso mozzarella", q: "200 g" },
+            { n: "Jamón de pavo", q: "200 g" },
+            { n: "Atún en lata al agua", q: "2 latas" },
+            { n: "Pan integral", q: "1 bolsa" },
+            { n: "Harina", q: "1 kg" },
+            { n: "Levadura seca", q: "1 sobre" },
+            { n: "Tomates en tarro", q: "2 tarros" },
+            { n: "Pasta de tomate", q: "1 caja" },
+          ],
+        },
+        {
+          cat: "Almacén / diario 🥖", links: false,
+          items: [
+            { n: "Marraquetas", q: "al día, ~1 por persona" },
           ],
         },
       ],
