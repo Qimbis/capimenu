@@ -60,24 +60,6 @@ const CAPI_DATA = {
       nutri: { e: "~340 kcal · 17 g proteína" },
     },
 
-    "desayuno-libre": {
-      t: "Desayuno libre — elige tú", emoji: "☕", time: "0–10 min",
-      ing: [
-        { n: "Apurada o sin hambre: un vaso de leche descremada y listo (está bien, en serio)", e: "1 vaso", h: "1 vaso" },
-        { n: "Yogur natural con avena y fruta", e: "1 pote", h: "1 pote" },
-        { n: "Pan o marraqueta con quesillo y tomate", e: "1–2 reb.", h: "1–2 reb." },
-        { n: "Huevo revuelto con tomate (si el turno te da tiempo)", e: "2 huevos", h: "1–2 huevos" },
-        { n: "Avena caliente con plátano y canela", e: "1 taza", h: "1 taza" },
-      ],
-      steps: [
-        "El desayuno es TUYO y libre: come lo que se te antoje de la lista según cómo amanezcas y tu turno.",
-        "Entrada temprano: lo primero a la mano, sin cocinar — un vaso de leche o un yogur y a trabajar.",
-        "Con más tiempo: el huevo o la avena, que aguantan más hasta el almuerzo.",
-        "Para el hijo sí conviene que no se salte algo (a los 10 el desayuno importa); cualquier opción de la lista le sirve.",
-      ],
-      nutri: { e: "de ~120 kcal (solo leche) a ~360 (huevo con pan) — cualquiera está bien, no lo pienses" },
-    },
-
     /* ---------- almuerzos ---------- */
     "tallarines-bolonesa": {
       t: "Tallarines con boloñesa liviana", emoji: "🍝", time: "25 min",
@@ -344,8 +326,8 @@ const CAPI_DATA = {
       snack: "Fruta de estación entre comidas (manzana, pera, kiwi, mandarina). Para él, libre — la fruta nunca se raciona.",
       rules: [
         "El gran cambio: cocinas 2 veces en la semana, no 7. Cada olla rinde 3 almuerzos.",
-        "El desayuno es libre: elige de la lista según tu turno. Si es solo un vaso de leche y salir, está bien.",
-        "La once también es libre: elige la que quieras, o aprovecha lo que sobró del almuerzo.",
+        "El desayuno ya viene elegido y es rápido (5–10 min): no tienes que pensarlo a las 6 AM y así no te saltas las calorías de la mañana. En turno temprano, el licuado o el yogur se toman casi en la puerta.",
+        "La once ya viene puesta; si un día prefieres aprovechar lo que sobró del almuerzo, también vale.",
         "Se recalienta en olla con un chorrito de agua (sin microondas). Sabe mejor al 2º día.",
         "¿Prefieres cocinar UNA sola vez para toda la semana? Haz la olla de pollo más grande y rinde los 6 días — tú mandas.",
         "Nada frito (la vesícula manda), grasas en cucharaditas, y la pizza del domingo es plan, no pecado. 🦫",
@@ -361,13 +343,13 @@ const CAPI_DATA = {
         ],
       },
       days: [
-        { name: "Lunes",     desayuno: "desayuno-libre", almuerzo: "olla-pollo",    once: "once-quesillo" },
-        { name: "Martes",    desayuno: "desayuno-libre", almuerzo: "olla-pollo",    once: "once-pavo" },
-        { name: "Miércoles", desayuno: "desayuno-libre", almuerzo: "olla-pollo",    once: "once-atun" },
-        { name: "Jueves",    desayuno: "desayuno-libre", almuerzo: "olla-lentejas", once: "once-huevo" },
-        { name: "Viernes",   desayuno: "desayuno-libre", almuerzo: "olla-lentejas", once: "once-pavo" },
-        { name: "Sábado",    desayuno: "desayuno-libre", almuerzo: "olla-lentejas", once: "once-quesillo" },
-        { name: "Domingo",   desayuno: "desayuno-libre", almuerzo: "pizza-casera",  once: "once-atun" },
+        { name: "Lunes",     desayuno: "licuado-platano",  almuerzo: "olla-pollo",    once: "once-quesillo" },
+        { name: "Martes",    desayuno: "yogur-bowl",       almuerzo: "olla-pollo",    once: "once-pavo" },
+        { name: "Miércoles", desayuno: "porridge-platano", almuerzo: "olla-pollo",    once: "once-atun" },
+        { name: "Jueves",    desayuno: "huevos-marraqueta",almuerzo: "olla-lentejas", once: "once-huevo" },
+        { name: "Viernes",   desayuno: "licuado-platano",  almuerzo: "olla-lentejas", once: "once-pavo" },
+        { name: "Sábado",    desayuno: "yogur-bowl",       almuerzo: "olla-lentejas", once: "once-quesillo" },
+        { name: "Domingo",   desayuno: "porridge-platano", almuerzo: "pizza-casera",  once: "once-atun" },
       ],
       shopping: [
         {
